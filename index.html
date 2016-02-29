@@ -83,9 +83,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>名人说 基础是人类进步的阶梯 所以我们要注意脚下</p>
-</blockquote>
+        <p>&gt;</p>
 <h1 id="今天和大家谈一谈-CSS的样式和引用方式-￣ω￣"><a href="#今天和大家谈一谈-CSS的样式和引用方式-￣ω￣" class="headerlink" title="今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)"></a>今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)</h1><h2 id="1-CSS-样式"><a href="#1-CSS-样式" class="headerlink" title="1 - CSS 样式"></a>1 - CSS 样式</h2><p>－ css 样式由选择符和声明组成，而声明又由属性和值组成。</p>
 <ul>
 <li><p>选择器{属性:值}</p>
@@ -125,11 +123,41 @@
 <li>IE中使用@import会改变文件的加载顺序。这可能会增加CSS文件的加载时间，阻碍页面渲染。</li>
 </ul>
 <p>优先级：外部引用 &lt; 内部引用 &lt; 内联样式<br>（范围越小，优先级越高）</p>
+<h2 id="3-css-选择器"><a href="#3-css-选择器" class="headerlink" title="3 - css 选择器"></a>3 - css 选择器</h2><ul>
+<li><p>id选择器：直接作用于叫该名称的标签元素，有唯一性。</p>
+<p>  表现形式：＃id</p>
+</li>
+<li><p>class选择器：作用于有该类名的元素，可复用。</p>
+<p>  表现形式：.class</p>
+</li>
+<li><p>标签选择器：直接作用于选择的标签元素，是一个集合。</p>
+<p>  表现形式：tag</p>
+</li>
+<li><p>通配选择器：作用于所有元素。</p>
+<p>  表现形式：*</p>
+</li>
+<li><p>层级选择器：作用于指定元素后代的指定元素，生效在最里面的元素。</p>
+<p>  表现形式：div span</p>
+</li>
+<li><p>分组选择器：用’，‘隔开，无顺序可言，偏重于代码优化。</p>
+<p>  表现形式：html,body{width:100%;height:100%}</p>
+</li>
+<li><p>伪类选择器：用’:‘隔开</p>
+<p>  表现形式：</p>
+<p>  a:link {color: #FF0000}        /<em> 未访问的链接 </em>/</p>
+<p>  a:visited {color: #00FF00}    /<em> 已访问的链接 </em>/</p>
+<p>  a:hover {color: #FF00FF}    /<em> 鼠标移动到链接上 </em>/</p>
+<p>  a:active {color: #0000FF}    </p>
+</li>
+<li><p>伪元素选择器：用’::‘隔开</p>
+</li>
+</ul>
+<p>－ !important 为某些样式设置最高权值</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil4q3bzn0000nfet2y8u2gr5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil7aazgx0000gueto3ds3h1c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -184,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/HTML的结构与标签/" data-id="cil4q3c0c0007nfeth92fcyu2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/HTML的结构与标签/" data-id="cil7aazhl0007guet34w6epei" class="article-share-link">Share</a>
       
       
     </footer>
@@ -232,8 +260,7 @@
 <p> 起包裹作用。默认继承父级宽高，有默认的margin值。</p>
 </li>
 </ol>
-<pre><code>&lt;!-- more --&gt; 
-</code></pre><ol>
+<ol>
 <li><p>链接标签：&lt; a href=”url” &gt; &lt; / a &gt;</p>
 <p> 属性有：href 必须存在 | title 起提示作用 | target 设定是否在新页面打开链接</p>
 <p> &lt; a &gt; 标签有默认的字体颜色、下划线及下划线颜色，宽度由内容填充。其中href的值为指定链接的地址，不能为空否则属性失效，可用#代替，#可与id配合形成锚点。</p>
@@ -242,6 +269,8 @@
 <p> 属性有：src=”图像的位置” | alt=”指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本” | title=”提供在图像可见时对图像的描述(鼠标滑过图片时显示的文本)”</p>
 <p> 作为特殊的行级标签可直接设置宽高。在部分浏览器中有边框属性，需要去除以免影响浏览效果。</p>
 </li>
+</ol>
+<ol>
 <li><p>列表标签</p>
 <pre><code>有序列表
 &lt;ol&gt;
@@ -330,7 +359,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/HTML的属性/" data-id="cil4q3c0f0008nfetip39y277" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/HTML的属性/" data-id="cil7aazho0008guetvmemfrt5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -374,7 +403,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/JS之倒计时/" data-id="cil4q3c0a0006nfetw9r28x1k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/JS之倒计时/" data-id="cil7aazhj0006guetjtng638c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -421,7 +450,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/08/JS之数组操作/" data-id="cil4q3c050003nfet1v751cmk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/08/JS之数组操作/" data-id="cil7aazhd0003guetwpy8krsb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -471,7 +500,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/07/JS之字符串操作/" data-id="cil4q3c060004nfet8z434oma" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/07/JS之字符串操作/" data-id="cil7aazhe0004guet7kat8apl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -520,7 +549,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/03/JS之原型/" data-id="cil4q3c080005nfetpgpg1b7t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/03/JS之原型/" data-id="cil7aazhi0005gueton3k7r7p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -573,7 +602,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/27/JS之预解析/" data-id="cil4q3c030002nfetknpqpbb0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/27/JS之预解析/" data-id="cil7aazhb0002guetd4o82izm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -619,7 +648,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/新生/" data-id="cil4q3c000001nfetqqycikdk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/新生/" data-id="cil7aazh90001guetgtljwi0g" class="article-share-link">Share</a>
       
       
     </footer>

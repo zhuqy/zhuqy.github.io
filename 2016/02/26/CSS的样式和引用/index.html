@@ -5,8 +5,7 @@
   
   <title>CSS的 | 7号代码铺</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="名人说 基础是人类进步的阶梯 所以我们要注意脚下
-
+  <meta name="description" content="&amp;gt;
 今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)1 - CSS 样式－ css 样式由选择符和声明组成，而声明又由属性和值组成。
 
 选择器{属性:值}
@@ -16,13 +15,14 @@
 注释方式 / /
 
 
-2 - css 引用方式－ 外部引用：在">
+2 - css 引用方式－ 外部引用：在head位置用link引用
+
+一个css可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS的">
 <meta property="og:url" content="http://yoursite.com/2016/02/26/CSS的样式和引用/index.html">
 <meta property="og:site_name" content="7号代码铺">
-<meta property="og:description" content="名人说 基础是人类进步的阶梯 所以我们要注意脚下
-
+<meta property="og:description" content="&amp;gt;
 今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)1 - CSS 样式－ css 样式由选择符和声明组成，而声明又由属性和值组成。
 
 选择器{属性:值}
@@ -32,12 +32,13 @@
 注释方式 / /
 
 
-2 - css 引用方式－ 外部引用：在">
-<meta property="og:updated_time" content="2016-02-27T06:01:35.000Z">
+2 - css 引用方式－ 外部引用：在head位置用link引用
+
+一个css可">
+<meta property="og:updated_time" content="2016-02-27T07:08:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS的">
-<meta name="twitter:description" content="名人说 基础是人类进步的阶梯 所以我们要注意脚下
-
+<meta name="twitter:description" content="&amp;gt;
 今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)1 - CSS 样式－ css 样式由选择符和声明组成，而声明又由属性和值组成。
 
 选择器{属性:值}
@@ -47,7 +48,9 @@
 注释方式 / /
 
 
-2 - css 引用方式－ 外部引用：在">
+2 - css 引用方式－ 外部引用：在head位置用link引用
+
+一个css可">
   
     <link rel="alternative" href="/atom.xml" title="7号代码铺" type="application/atom+xml">
   
@@ -115,9 +118,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>名人说 基础是人类进步的阶梯 所以我们要注意脚下</p>
-</blockquote>
+        <p>&gt;</p>
 <h1 id="今天和大家谈一谈-CSS的样式和引用方式-￣ω￣"><a href="#今天和大家谈一谈-CSS的样式和引用方式-￣ω￣" class="headerlink" title="今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)"></a>今天和大家谈一谈 CSS的样式和引用方式 (=￣ω￣=)</h1><h2 id="1-CSS-样式"><a href="#1-CSS-样式" class="headerlink" title="1 - CSS 样式"></a>1 - CSS 样式</h2><p>－ css 样式由选择符和声明组成，而声明又由属性和值组成。</p>
 <ul>
 <li><p>选择器{属性:值}</p>
@@ -157,11 +158,41 @@
 <li>IE中使用@import会改变文件的加载顺序。这可能会增加CSS文件的加载时间，阻碍页面渲染。</li>
 </ul>
 <p>优先级：外部引用 &lt; 内部引用 &lt; 内联样式<br>（范围越小，优先级越高）</p>
+<h2 id="3-css-选择器"><a href="#3-css-选择器" class="headerlink" title="3 - css 选择器"></a>3 - css 选择器</h2><ul>
+<li><p>id选择器：直接作用于叫该名称的标签元素，有唯一性。</p>
+<p>  表现形式：＃id</p>
+</li>
+<li><p>class选择器：作用于有该类名的元素，可复用。</p>
+<p>  表现形式：.class</p>
+</li>
+<li><p>标签选择器：直接作用于选择的标签元素，是一个集合。</p>
+<p>  表现形式：tag</p>
+</li>
+<li><p>通配选择器：作用于所有元素。</p>
+<p>  表现形式：*</p>
+</li>
+<li><p>层级选择器：作用于指定元素后代的指定元素，生效在最里面的元素。</p>
+<p>  表现形式：div span</p>
+</li>
+<li><p>分组选择器：用’，‘隔开，无顺序可言，偏重于代码优化。</p>
+<p>  表现形式：html,body{width:100%;height:100%}</p>
+</li>
+<li><p>伪类选择器：用’:‘隔开</p>
+<p>  表现形式：</p>
+<p>  a:link {color: #FF0000}        /<em> 未访问的链接 </em>/</p>
+<p>  a:visited {color: #00FF00}    /<em> 已访问的链接 </em>/</p>
+<p>  a:hover {color: #FF00FF}    /<em> 鼠标移动到链接上 </em>/</p>
+<p>  a:active {color: #0000FF}    </p>
+</li>
+<li><p>伪元素选择器：用’::‘隔开</p>
+</li>
+</ul>
+<p>－ !important 为某些样式设置最高权值</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil4q3bzn0000nfet2y8u2gr5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil7aazgx0000gueto3ds3h1c" class="article-share-link">Share</a>
       
       
     </footer>
