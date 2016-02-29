@@ -93,71 +93,15 @@
 <li><p>注释方式 /<em> </em>/</p>
 </li>
 </ul>
-<h2 id="2-css-引用方式"><a href="#2-css-引用方式" class="headerlink" title="2 - css 引用方式"></a>2 - css 引用方式</h2><p>－ 外部引用：在head位置用link引用</p>
-<ul>
-<li>一个css可以控制多个html页面，复用率高</li>
-<li>方便改版和维护</li>
-<li>有效利用浏览器的缓存，实现加载更快</li>
-<li>相对于整站来说，代码更少，更加方便于分工合作</li>
-<li>相对于单页面来说，有垃圾代码，而且link标签中的href会增加服务器的压力</li>
-<li>使用场景：整站，访问量不是那么大的网页中</li>
-</ul>
-<p>－ ：在head位置用style引用</p>
-<ul>
-<li>速度快(网络原因)，没有请求压力</li>
-<li>相对外部引入来说代码更少</li>
-<li>不利于代码的改版和维护</li>
-<li>代码混乱，不利于跟前后台的沟通</li>
-<li>使用场景：高访问量的网页(首页，活动页)</li>
-</ul>
-<p>－ 内联样式：把css代码直接写在现有的HTML标签中</p>
-<ul>
-<li>优先级最高，不会被其他样式覆盖影响</li>
-<li>多余代码多</li>
-<li>不利于代码的改版和维护</li>
-<li>代码混乱，没有样式内容分离，影响阅读体验</li>
-<li>使用场景：跟js和后台生成</li>
-</ul>
-<p>－ @import url(reset.css);</p>
-<ul>
-<li>IE中使用@import会改变文件的加载顺序。这可能会增加CSS文件的加载时间，阻碍页面渲染。</li>
-</ul>
-<p>优先级：外部引用 &lt; 内部引用 &lt; 内联样式<br>（范围越小，优先级越高）</p>
-<h2 id="3-css-选择器"><a href="#3-css-选择器" class="headerlink" title="3 - css 选择器"></a>3 - css 选择器</h2><ul>
-<li><p>id选择器：直接作用于叫该名称的标签元素，有唯一性。</p>
-<p>  表现形式：＃id</p>
-</li>
-<li><p>class选择器：作用于有该类名的元素，可复用。</p>
-<p>  表现形式：.class</p>
-</li>
-<li><p>标签选择器：直接作用于选择的标签元素，是一个集合。</p>
-<p>  表现形式：tag</p>
-</li>
-<li><p>通配选择器：作用于所有元素。</p>
-<p>  表现形式：*</p>
-</li>
-<li><p>层级选择器：作用于指定元素后代的指定元素，生效在最里面的元素。</p>
-<p>  表现形式：div span</p>
-</li>
-<li><p>分组选择器：用’，‘隔开，无顺序可言，偏重于代码优化。</p>
-<p>  表现形式：html,body{width:100%;height:100%}</p>
-</li>
-<li><p>伪类选择器：用’:‘隔开</p>
-<p>  表现形式：</p>
-<p>  a:link {color: #FF0000}        /<em> 未访问的链接 </em>/</p>
-<p>  a:visited {color: #00FF00}    /<em> 已访问的链接 </em>/</p>
-<p>  a:hover {color: #FF00FF}    /<em> 鼠标移动到链接上 </em>/</p>
-<p>  a:active {color: #0000FF}    </p>
-</li>
-<li><p>伪元素选择器：用’::‘隔开</p>
-</li>
-</ul>
-<p>－ !important 为某些样式设置最高权值</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2016/02/26/CSS的样式和引用/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil7aazgx0000gueto3ds3h1c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/26/CSS的样式和引用/" data-id="cil7ace810000hiet5y5w9ktq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/HTML的结构与标签/" data-id="cil7aazhl0007guet34w6epei" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/HTML的结构与标签/" data-id="cil7ace8n0007hietk7mnt509" class="article-share-link">Share</a>
       
       
     </footer>
@@ -359,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/25/HTML的属性/" data-id="cil7aazho0008guetvmemfrt5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/25/HTML的属性/" data-id="cil7ace8q0008hietyf0sc6nn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -403,7 +347,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/15/JS之倒计时/" data-id="cil7aazhj0006guetjtng638c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/15/JS之倒计时/" data-id="cil7ace8m0006hietc3s3p70o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -450,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/08/JS之数组操作/" data-id="cil7aazhd0003guetwpy8krsb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/08/JS之数组操作/" data-id="cil7ace8h0003hiet0jz3y0lm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -500,7 +444,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/07/JS之字符串操作/" data-id="cil7aazhe0004guet7kat8apl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/07/JS之字符串操作/" data-id="cil7ace8j0004hietk6dqjlq0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -549,7 +493,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/12/03/JS之原型/" data-id="cil7aazhi0005gueton3k7r7p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/12/03/JS之原型/" data-id="cil7ace8k0005hietxxlovze5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -602,7 +546,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/27/JS之预解析/" data-id="cil7aazhb0002guetd4o82izm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/27/JS之预解析/" data-id="cil7ace8g0002hietseb3a6dj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -648,7 +592,7 @@ console.log(str.lastIndexOf(&quot;0&quot;,10));//7;从字符串尾部开始寻�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/25/新生/" data-id="cil7aazh90001guetgtljwi0g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/25/新生/" data-id="cil7ace8d0001hiet8qdelavp" class="article-share-link">Share</a>
       
       
     </footer>
